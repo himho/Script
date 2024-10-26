@@ -6,7 +6,7 @@
 #!icon = https://raw.githubusercontent.com/zduxzhu/QuantumultX/main/baidumap.png
 #!date = 2024-06-30 15:40:31
 
-[Mitm]
+#![Mitm]
 hostname = 180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
 
 [Rule]
