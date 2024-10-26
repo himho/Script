@@ -51,6 +51,6 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 # > 百度地图_DNS处理@ddgksf2013
 ^https?:\/\/httpdns\.baidubce\.com reject-200
 # > 百度地图_各种商业推广@ddgksf2013
-^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing reject-200
+# ^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing reject-200
 # > 百度地图_我的页面地图动态@ddgksf2013
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic reject-200
