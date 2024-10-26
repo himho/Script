@@ -12,7 +12,7 @@ hostname = newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com, 180
 [Rule]
 # 拦截HTTPDNS
 DOMAIN, httpdns.baidubce.com, REJECT
-IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
+# IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 
 [Rewrite]
 # 开屏广告
