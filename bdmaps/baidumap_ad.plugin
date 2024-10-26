@@ -6,15 +6,15 @@
 #!icon = https://raw.githubusercontent.com/zduxzhu/QuantumultX/main/baidumap.png
 #!date = 2024-06-30 15:40:31
 
-#![Mitm]
+[Mitm]
 hostname = newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com, 180.76.76.200
 
-#![Rule]
+[Rule]
 # 拦截HTTPDNS
-# DOMAIN, httpdns.baidubce.com, REJECT
-# IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
+DOMAIN, httpdns.baidubce.com, REJECT
+IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 
-#![Rewrite]
+[Rewrite]
 # 开屏广告
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
 # 出行 - 推荐项目
