@@ -14,7 +14,7 @@ hostname = newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com, 180
 # DOMAIN, httpdns.baidubce.com, REJECT
 # IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 
-[Rewrite]
+#![Rewrite]
 # 开屏广告
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
 # 出行 - 推荐项目
