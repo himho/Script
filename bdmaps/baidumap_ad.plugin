@@ -15,6 +15,9 @@ DOMAIN, httpdns.baidubce.com, REJECT
 IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 
 [Rewrite]
+^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_aide_module url reject-dict
+^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_card_ugc url reject-dict
+^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_trip_route_tab url reject-dict
 # 开屏广告
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
 # 出行 - 推荐项目
