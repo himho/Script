@@ -1,3 +1,4 @@
+
 #!name = 百度地图去广告
 #!desc = 百度地图去广告
 #!openUrl = https://raw.githubusercontent.com/zduxzhu/QuantumultX/main/baidumap_ad.plugin
@@ -7,7 +8,7 @@
 #!date = 2024-06-30 15:40:31
 
 [Mitm]
-hostname = newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com, 180.76.76.200
+hostname=180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
 
 [Rule]
 # 拦截HTTPDNS
@@ -15,9 +16,6 @@ DOMAIN, httpdns.baidubce.com, REJECT
 IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 
 [Rewrite]
-^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_aide_module url reject-dict
-^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_card_ugc url reject-dict
-^https:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing\/\?container=du_trip_route_tab url reject-dict
 # 开屏广告
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
 # 出行 - 推荐项目
@@ -51,6 +49,6 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 # > 百度地图_DNS处理@ddgksf2013
 ^https?:\/\/httpdns\.baidubce\.com reject-200
 # > 百度地图_各种商业推广@ddgksf2013
-# ^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing reject-200
+^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing reject-200
 # > 百度地图_我的页面地图动态@ddgksf2013
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic reject-200
