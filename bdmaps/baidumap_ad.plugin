@@ -18,8 +18,8 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 # 开屏广告
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
 # 出行 - 推荐项目
-^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content url script-response-body https://raw.githubusercontent.com/himho/Script/refs/heads/main/bdmaps/bdmap.js
-#^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? url script-response-body https://raw.githubusercontent.com/himho/Script/refs/heads/main/bdmaps/bdmap.js
+^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content response-body-json-del data
+# ^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? reject-dict
 # 出行 - 文字横幅
 ^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? response-body-json-del content.multi_data
 # 我的 - 语音包、活动专区
