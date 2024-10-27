@@ -19,15 +19,15 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 # 开屏广告
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
 # 出行 - 推荐项目
-^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content response-body-json-del data
-# ^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? reject-dict
+^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content reject-dict
+^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? reject-dict
 # 出行 - 文字横幅
-^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? response-body-json-del content.multi_data
+^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? reject-dict
 
 # 我的 - 语音包、活动专区
-#^https:\/\/newclient\.map\.baidu\.com\/(client\/)?usersystem\/mine\/page\? response-body-json-replace data {}
+#^https:\/\/newclient\.map\.baidu\.com\/(client\/)?usersystem\/mine\/page\? reject-dict
 # 我的 - 精选服务
-^https:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads&type=user_home_new_service response-body-json-del ads
+^https:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads&type=user_home_new_service reject-dict
 # 打车 - 弹窗
 ^https:\/\/yongche\.baidu\.com\/gomarketing\/api\/popup\/getentrancecordovaurl$ reject-dict
 # 打车 - 推广
