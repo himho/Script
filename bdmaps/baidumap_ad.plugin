@@ -8,7 +8,7 @@
 #!date = 2024-06-30 15:40:31
 
 [Mitm]
-hostname=180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
+hostname=180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com, maphotel.baidu.com
 
 [Rule]
 # 拦截HTTPDNS
@@ -47,6 +47,8 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw reject-200
 # > 百度地图_开屏广告|首页左上角广告@ddgksf2013
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads reject-200
+# 酒店
+^https?:\/\/maphotel\.baidu.com\/hotel reject-200
 # 周边
 ^https?:\/\/newclient\.map\.baidu\.com\/living\/nearby  reject-200
 # > 百度地图_DNS处理@ddgksf2013
