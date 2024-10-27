@@ -23,7 +23,7 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 ^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content reject-dict
 ^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? reject-dict
 # 出行 - 文字横幅
-^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? reject-dict
+^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? reject-200
 
 # 我的 - 语音包、活动专区
 #^https:\/\/newclient\.map\.baidu\.com\/(client\/)?usersystem\/mine\/page\? reject-dict
