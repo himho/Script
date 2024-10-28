@@ -49,9 +49,9 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 # > 百度地图_开屏广告|首页左上角广告@ddgksf2013
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads reject-200
 # 酒店
-^https?:\/\/maphotel\.baidu.com\/hotel reject-200
+^https?:\/\/maphotel\.baidu.com\/hotel reject-dict
 # 周边
-^https?:\/\/newclient\.map\.baidu\.com\/living\/nearby  reject-200
+^https?:\/\/newclient\.map\.baidu\.com\/living\/nearby  reject-dict
 # > 百度地图_DNS处理@ddgksf2013
 ^https?:\/\/httpdns\.baidubce\.com reject-200
 # > 百度地图_各种商业推广@ddgksf2013
